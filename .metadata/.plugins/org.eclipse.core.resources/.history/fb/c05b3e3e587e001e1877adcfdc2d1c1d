@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {	//main method
+		System.out.println("Hello World");
+		Scanner s= new Scanner(null)
+	}
+
+}
