@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {	//main method
+	
+		Scanner in= new Scanner(System.in); //khai bao chuc nang nhap
+		in.nextLine()
+		
+		
+		int[] grades = new int[5];
+	
+		
+		in.close();
+	}
+
+}

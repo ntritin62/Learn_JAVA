@@ -5,14 +5,14 @@ public class FirstProgram {
 	public static void main(String[] args) {	//main method
 	
 		Scanner in= new Scanner(System.in); //khai bao chuc nang nhap
-		System.out.println("Give us a size.");
+		System.out.println("");
 		int size = in.nextInt();
 		
 		
 		
 		int[] grades = new int[size];
 		
-		for(int i = 0; i < size; i++) {
+		for(int i = 0; i< size; i++) {
 			grades[i] = in.nextInt();
 		}
 		
