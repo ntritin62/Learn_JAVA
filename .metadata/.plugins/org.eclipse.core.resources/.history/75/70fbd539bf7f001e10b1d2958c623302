@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {	//main method
+	
+		Scanner in= new Scanner("test.txt"); //khai bao chuc nang nhap
+		in.close()
+	}
+
+}

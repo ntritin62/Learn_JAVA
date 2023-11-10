@@ -1,29 +1,17 @@
 import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
 
 public class FirstProgram {
 
-	public static void main(String[] args) {	//main method
-	
-		Scanner in= new Scanner(System.in); //khai bao chuc nang nhap
-		System.out.println("Give us a size.");
-		int size = in.nextInt();
+	public static void main(String[] args) throws FileNotFoundException {	//main method
+//	Dòng đầu tiên trong phương thức main tạo một đối tượng Scanner để đọc dữ liệu từ tệp "students.txt". Đối tượng Scanner được khởi tạo với đối số là một đối tượng File đại diện cho tệp cần đọc. Nếu tệp không tồn tại, FileNotFoundException sẽ được ném ra.
+		Scanner in= new Scanner(new File("students.txt"));
 		
-		
-		
-		int[] grades = new int[size];
-		
-		for(int i = 0; i < size; i++) {
-			grades[i] = in.nextInt();
+		while(in.hasNextLine()) {
+			System.out.println(in.nextLine());
 		}
-		
-	
 		in.close();
-		
-		System.out.println("Enter " + size + " numbers. Press enter after each");
-		for(int i = 0; i< size; i++) {
-			System.out.println(grades[i]);
-		}
-		
 	}
 
 }

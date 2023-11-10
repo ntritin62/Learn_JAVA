@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {	//main method
+	
+		Scanner in= new Scanner(new file(".test.txt"));
+		
+		if(in.hasNextLine()) {
+			System.out.println(in.nextLine());
+		}
+		in.close();
+	}
+
+}
