@@ -10,14 +10,10 @@ import java.io.FileNotFoundException;
 public class FirstProgram {
 
 	public static void main(String[] args) throws FileNotFoundException {	//main method
-		
-		LinkedList<String> names = new LinkedList<String>(); //Linked List là queue
+
+		LinkedList<String> names = new LinkedList<String>();
 		names.add("caleb");
-		names.add("Sue");
-		names.add("sally");
-		System.out.println(names.remove());
-		System.out.println(names.remove());
-		System.out.println(names.remove());
+		names.add("")
 	}
 
 }
