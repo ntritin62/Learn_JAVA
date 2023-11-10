@@ -9,9 +9,8 @@ import java.io.FileNotFoundException;
 
 public class FirstProgram {
 
-	public static void main(String[] args) {	
-		
-		
+	public static void main(String[] args) throws FileNotFoundException {	//main method
+		Scanner in = new Scanner(System.in)
 		LinkedList<String> names = new LinkedList<String>(); //Linked List là queue hoặc stack
 		names.push("caleb"); // là thêm ptu đầu vào list (Stack) 
 		names.add("Sue"); // là thêm ptu vào cuối list (Queue)
