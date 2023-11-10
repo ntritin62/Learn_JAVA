@@ -12,8 +12,7 @@ public class FirstProgram {
 
 		Scanner in= new Scanner(new File("students.txt"));
 		
-		List<String> students = new ArrayList<String>(); //List giống kiểu lớp trù tượng của ArrayList
-		
+		List<String> students = new ArrayList<String>();
 		
 		while(in.hasNextLine()) {
 			students.add(in.nextLine());
