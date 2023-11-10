@@ -4,8 +4,6 @@ import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 
-
-
 public class FirstProgram {
 
 	public static void main(String[] args) throws FileNotFoundException {	//main method
@@ -16,10 +14,7 @@ public class FirstProgram {
 		
 		while(in.hasNextLine()) {
 			students.add(in.nextLine());
-		}
-		
-		for(int i = 0; i< students.size();i++) {
-			System.out.println("name: " + students.get(i));
+			System.out.println(in.nextLine());
 		}
 		in.close();
 	}
