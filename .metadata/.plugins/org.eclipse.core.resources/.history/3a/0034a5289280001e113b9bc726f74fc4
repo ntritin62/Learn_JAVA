@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.ListIterator;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -19,17 +18,13 @@ public class FirstProgram {
 		names.push("Sue"); 
 		names.push("sally");
 		
-		ListIterator<String> it = names.listIterator();
+		Iterator<String> it = names.iterator();
 
-		it.next();
-		it.next();
-		it.add("Susan");
 		
-		
-		
-		for(String s:names) {
-			System.out.println(s);
+		while(it.hasNext()) {
+			System.out.println(it.next());
 		}
+		
 		
 	}
 

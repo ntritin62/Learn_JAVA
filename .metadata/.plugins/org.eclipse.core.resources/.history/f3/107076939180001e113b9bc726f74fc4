@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.ListIterator;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -16,21 +15,16 @@ public class FirstProgram {
 		
 		LinkedList<String> names = new LinkedList<String>(); 
 		names.push("caleb"); 
-		names.push("Sue"); 
+		names.add("Sue"); 
 		names.push("sally");
 		
-		ListIterator<String> it = names.listIterator();
-
-		it.next();
-		it.next();
-		it.add("Susan");
+		Iterator<String> it = names.iterator();
+		System.out.println(it.next());
 		
 		
-		
-		for(String s:names) {
-			System.out.println(s);
-		}
-		
+		System.out.println(names.pop()); 
+		System.out.println(names.remove()); 
+		System.out.println(names.removeFirst());
 	}
 
 }
