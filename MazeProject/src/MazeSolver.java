@@ -1,38 +1,36 @@
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.Scanner;
 
 public class MazeSolver {
 	
-	static ArrayList<Maze> mazes = new ArrayList<Maze>();
+
 	
 	
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 		
-		 Maze m = new Maze();
-		int[][] maze = {
-				{2, 1, 1, 1},
-				{0, 0, 1, 1},
-				{0, 0, 0, 1}
-		};
-		m.maze = maze;
-		m.start = new Position(0,3);
-		m.path = new LinkedList<Position>();
+		ArrayList<Maze> mazes = new ArrayList<Maze>();
 		
-		Maze n = new Maze();
+		//fill list from file
+		Maze m = new Maze();
+		Scanner in = new Scanner(new File("mazes.txt"));
+		int rows = Integer.parseInt(in.nextLine());
+		m.maze = new int[rows][];
 		
-		int[][] n_maze = {
-				{2, 1, 1, 1},
-				{0, 0, 1, 1},
-				{0, 0, 0, 1}
-		};
-		n.maze = n_maze;
-		n.start = new Position(0,3);
-		n.path = new LinkedList<Position>();
+		for(int i=0;i< rows;i++) {
+			String line = in.nextLine();
+			
+			m.maze[i] = Arrays.stream(line.split(", ")).mapToInt(Integer::parseInt).toArray();
+		}
+		
+		m.start = new Position(Integer.parseInt(in.nextLine()),Integer.parseInt(in.nextLine()));
 		
 		
 		mazes.add(m);
-		mazes.add(n);
 		
 		int i = 0;
 		while(i < mazes.size()) {

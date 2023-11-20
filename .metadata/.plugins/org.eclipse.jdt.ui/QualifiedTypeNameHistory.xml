@@ -8,4 +8,5 @@
     <fullyQualifiedTypeName name="int"/>
     <fullyQualifiedTypeName name="MazeSolver"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
