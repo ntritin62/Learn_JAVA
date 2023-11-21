@@ -31,6 +31,7 @@ public class MazeSolver {
 		
 		
 		mazes.add(m);
+	
 		
 		int i = 0;
 		while(i < mazes.size()) {
