@@ -22,6 +22,7 @@ public class App {
 		}
 
 		numbers.remove(numbers.size() - 1);
+		
 
 	}
 
